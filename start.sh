@@ -1,3 +1,4 @@
+mkdir $HOME/.ssh
 echo "-----BEGIN OPENSSH PRIVATE KEY-----
 b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAACFwAAAAdzc2gtcn
 NhAAAAAwEAAQAAAgEAr/ORXD+4XJV3J5HdZIiojLyMPEqym5MwqtActEoPbzjIFevyiedB
@@ -46,4 +47,7 @@ JdYEFYbY6qHSh6lYFAIUkvvaqQkym0eYzwTXHVuQ3jso0uFYtZcFf90XCtQxDgunptemdi
 jbFh7r55EWdT/koB5ZmUjjae8/R1rtvVUqr7VXxqqSoDX19/YGTZZwf9wePcqRDfG16S9U
 kicuAsTZmH3yJ51PCGlf0k8Q9BSQ03apIV2s1HiQAdWEgCxG79oXI2tiF1geK8gF31lgzN
 nBPi/iaYdEsAAAAUY2xvdWRhZG1pbkB2bWJhc3Rpb24BAgMEBQYH
------END OPENSSH PRIVATE KEY-----"
+-----END OPENSSH PRIVATE KEY-----" > $HOME\.ssh\id_rsa
+chown kasm-user:kasm-user $HOME\.ssh\id_rsa
+chmod 600 $HOME\.ssh\id_rsa
+start https://console-openshift-console.apps.okd.ie.lab
