@@ -46,7 +46,7 @@ JdYEFYbY6qHSh6lYFAIUkvvaqQkym0eYzwTXHVuQ3jso0uFYtZcFf90XCtQxDgunptemdi
 jbFh7r55EWdT/koB5ZmUjjae8/R1rtvVUqr7VXxqqSoDX19/YGTZZwf9wePcqRDfG16S9U
 kicuAsTZmH3yJ51PCGlf0k8Q9BSQ03apIV2s1HiQAdWEgCxG79oXI2tiF1geK8gF31lgzN
 nBPi/iaYdEsAAAAUY2xvdWRhZG1pbkB2bWJhc3Rpb24BAgMEBQYH
------END OPENSSH PRIVATE KEY-----" > $HOME/.ssh/test
+-----END OPENSSH PRIVATE KEY-----" > ${HOME}//.ssh//test
 chown kasm-user:kasm-user $HOME/.ssh/test
 chmod 600 $HOME/.ssh/test
 subl 1.txt 
